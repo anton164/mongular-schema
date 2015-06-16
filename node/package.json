@@ -1,0 +1,11 @@
+{
+  "name": "mongular-schema",
+  "main": "mongular-schema.js",
+  "author": "Anton Abilov <anton.abilov@gmail.com>",
+  "version": "0.0.1",
+  "dependencies": {
+    "app-root-path": "^1.0.0",
+    "lodash": "~2.4.1",
+    "mongoose": "~4.0.5"
+  }
+}

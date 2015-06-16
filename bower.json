@@ -1,0 +1,27 @@
+{
+  "name": "mongular-schema",
+  "version": "0.0.1",
+  "authors": [
+    "anton164 <anton.abilov@gmail.com>"
+  ],
+  "dependencies": {
+    "angular": ">=1.2.*"
+  },
+  "keywords": [
+    "mongodb",
+    "mongoose",
+    "angular",
+    "bridge",
+    "mongular"
+  ],
+  "license": "MIT",
+  "main": "mongular-schema.js",
+  "ignore": [
+    "node",
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
