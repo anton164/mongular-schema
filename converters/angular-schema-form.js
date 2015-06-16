@@ -1,4 +1,4 @@
-angular.module('mongular-schema', []).factory('MongularSchemaForm', ['MongularSchema',
+angular.module('mongular-schema').factory('MongularSchemaForm', ['MongularSchema',
   function(MongularSchema) {
     return {
       convert: function(sharedSchema)  {

@@ -5,7 +5,7 @@ angular.module('mongular-schema', []).factory('MongularSchema', ['$injector',
         return this.get(sharedSchema);
       },
       get: function(sharedSchema) {
-        return $injector.get(sharedSchema);
+        return (typeof sharedSchema === 'string' ? $injector.get(sharedSchema) : sharedSchema);
       }
     };
   }
