@@ -18,13 +18,13 @@ var MongularSchema = {
       result[key] = field;
     });
   },
-  convert: function(sharedSchema) {
-    return new Schema(this.prepare(sharedSchema));
+  convert: function(sharedSchema, mongooseOptions) {
+    return new Schema(this.prepare(sharedSchema), mongooseOptions);
   },
-  merge: function(sharedSchema, mongooseSchema)  {
+  merge: function(sharedSchema, mongooseSchema, mongooseOptions)  {
     var sharedSchema = (typeof sharedSchema === 'string' ?
       this.get(sharedSchema) : sharedSchema);
-    return new Schema(_.merge(this.prepare(sharedSchema), mongooseSchema));
+    return new Schema(_.merge(this.prepare(sharedSchema), mongooseSchema), mongooseOptions);
   },
   get: function(sharedSchema) {
     var filename = /.js$/.test(sharedSchema) ? sharedSchema : sharedSchema + ".js";
