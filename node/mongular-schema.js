@@ -28,7 +28,7 @@ var MongularSchema = {
   },
   get: function(sharedSchema) {
     var filename = /.js$/.test(sharedSchema) ? sharedSchema : sharedSchema + ".js";
-    return require(appRoot + sharedSchema);
+    return appRoot.require(sharedSchema);
   }
 };
 
